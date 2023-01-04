@@ -57,6 +57,21 @@ public class App {
                     System.out.printf("%d / %s / %s\n", article.id, article.title, article.body);
                 }
             }
+            //회원가입 logic 기본 틀
+            else if(cmd.equals("member join")){
+                System.out.println("== 회원 가입 ==");
+                System.out.printf("로그인 아이디: ");
+                String LoginID = sc.nextLine();
+                System.out.printf("로그인 비밀번호: ");
+                String LoginPW = sc.nextLine();
+                System.out.printf("로그인 비밀번호 확인: ");
+                String LoginPWCH = sc.nextLine();
+                System.out.printf("이름: ");
+                String Member_Nickname = sc.nextLine();
+                System.out.printf("%s님 환영합니다.\n", Member_Nickname);
+
+            }
+
             else if(cmd.equals("exit")){
                 System.out.println("=== 프로그램 종료 ===");
                 break;
