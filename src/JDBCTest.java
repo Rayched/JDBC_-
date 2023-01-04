@@ -15,8 +15,10 @@ import java.sql.SQLException;
 
                     String url = "jdbc:mysql://127.0.0.1:3306/text_board?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true&zeroDateTimeNehavior=convertToNull";
 
-                    conn = DriverManager.getConnection(url, "sbsst", "sbs123414");
-
+                    //conn = DriverManager.getConnection(url, "sbsst", "sbs123414");
+                    conn = DriverManager.getConnection(url, "root", "");
+                    //SQLyog에서 생성한 Database 계정
+                    //해당 계정이 없으면 user를 root로 수정
 
                     System.out.println("연결 성공");
                 }
